@@ -20,9 +20,6 @@ jobs:
         run: bun install
 
       - name: Build Svelte
-        env:
-          BASE_PATH: '/'
-          # BASE_PATH: '/${{ github.event.repository.name }}'
         run: bun run build
 
       - name: Upload Artifacts
