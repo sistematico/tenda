@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Streamster';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/streamster/Streamster.woff2') format('woff2'), /* Super Modern Browsers */ 
+    url('/fonts/streamster/Streamster.woff') format('woff'), /* Pretty Modern Browsers */ 
+    url('/fonts/streamster/Streamster.ttf') format('truetype'); /* Safari, Android, iOS */
+}
