@@ -1,5 +1,5 @@
-import adapter from 'svelte-adapter-bun';
-// import adapter from '@sveltejs/adapter-static';
+// import adapter from 'svelte-adapter-bun';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -10,7 +10,10 @@ const config = {
 			fallback: '404.html',
 			pages: 'build',
 			assets: 'build'
-		})
+		}),
+		paths: {
+			base: '',
+		}
 	}
 };
 
